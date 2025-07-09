@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>My Portfolio</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:700,400&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #4f8cff;
+            --secondary: #fff;
+            --accent: #232946;
+            --bg: #f4f6fb;
+        }
+        body {
+            margin: 0;
+            font-family: 'Montserrat', sans-serif;
+            background: var(--bg);
+            color: var(--accent);
+        }
+        header {
+            background: var(--primary);
+            color: var(--secondary);
+            padding: 2rem 0 1.5rem 0;
+            text-align: center;
+            box-shadow: 0 2px 8px rgba(79,140,255,0.1);
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+            letter-spacing: 2px;
+        }
+        header p {
+            margin: 0.5rem 0 0 0;
+            font-size: 1.2rem;
+            font-weight: 400;
+        }
+        nav {
+            margin-top: 1rem;
+        }
+        nav a {
+            color: var(--secondary);
+            text-decoration: none;
+            margin: 0 1rem;
+            font-weight: 700;
+            transition: color 0.2s;
+        }
+        nav a:hover {
+            color: #dbeafe;
+        }
+        .container {
+            max-width: 900px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+        section {
+            margin-bottom: 2.5rem;
+            background: var(--secondary);
+            border-radius: 12px;
+            box-shadow: 0 2px 12px rgba(79,140,255,0.07);
+            padding: 2rem;
+            transition: box-shadow 0.2s;
+        }
+        section:hover {
+            box-shadow: 0 4px 24px rgba(79,140,255,0.15);
+        }
+        h2 {
+            color: var(--primary);
+            margin-top: 0;
+            font-size: 2rem;
+        }
+        .projects {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+        }
+        .project-card {
+            background: #e9f0ff;
+            border-radius: 10px;
+            padding: 1.2rem;
+            box-shadow: 0 1px 6px rgba(79,140,255,0.08);
+            transition: transform 0.2s;
+        }
+        .project-card:hover {
+            transform: translateY(-5px) scale(1.03);
+        }
+        .project-card h3 {
+            margin: 0 0 0.5rem 0;
+            color: var(--accent);
+        }
+        .project-card p {
+            margin: 0 0 1rem 0;
+            font-size: 1rem;
+        }
+        .project-card a {
+            color: var(--primary);
+            text-decoration: underline;
+            font-weight: 700;
+        }
+        .skills-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.7rem;
+            margin: 1rem 0 0 0;
+        }
+        .skill {
+            background: var(--primary);
+            color: var(--secondary);
+            padding: 0.4rem 1rem;
+            border-radius: 20px;
+            font-size: 1rem;
+            font-weight: 500;
+            box-shadow: 0 1px 4px rgba(79,140,255,0.08);
+        }
+        .contact-form {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            max-width: 400px;
+        }
+        .contact-form input, .contact-form textarea {
+            padding: 0.7rem;
+            border: 1px solid #cfd8dc;
+            border-radius: 6px;
+            font-size: 1rem;
+            font-family: inherit;
+            resize: vertical;
+        }
+        .contact-form button {
+            background: var(--primary);
+            color: var(--secondary);
+            border: none;
+            padding: 0.8rem;
+            border-radius: 6px;
+            font-size: 1.1rem;
+            font-weight: 700;
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+        .contact-form button:hover {
+            background: #2563eb;
+        }
+        .success-message {
+            color: #22c55e;
+            font-weight: 600;
+            margin-top: 0.5rem;
+        }
+        @media (max-width: 600px) {
+            header h1 { font-size: 1.5rem; }
+            .container { padding: 0 0.5rem; }
+            section { padding: 1rem; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>EDWARD MWENDWA</h1>
+        <p>Web Developer & Designer</p>
+        <nav>
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#skills">Skills</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+    <div class="container">
+        <section id="about">
+            <h2>About Me</h2>
+            <p>
+                Hi! I'm Edward mwendwa, a passionate web developer with experience in building modern, responsive websites and web applications. I love turning ideas into reality using creative solutions and the latest technologies.
+            </p>
+        </section>
+        <section id="projects">
+            <h2>Projects</h2>
+            <div class="projects">
+                <div class="project-card">
+                    <h3>Portfolio Website</h3>
+                    <p>A personal website to showcase my skills and projects. Built with HTML, CSS, and JavaScript.</p>
+                    <a href="https://github.com/George21-lab/port">View Project</a>
+                </div>
+                <div class="project-card">
+                    <h3>Corban</h3>
+                    <p>A simple and intuitive website designed for advertising gaming products and photography.</p>
+                    <a href="https://github.com/George21-lab/corban">View Project</a>
+                </div>
+                <div class="project-card">
+                    <h3>Church</h3>
+                    <p>A full-featured church website designed to showcase church activities, events, and community outreach programs with e-commerce functionality.</p>
+                    <a href="https://github.com/George21-lab/church">View Project</a>
+                </div>
+            </div>
+        </section>
+        <section id="skills">
+            <h2>Skills</h2>
+            <div class="skills-list">
+                <span class="skill">HTML5</span>
+                <span class="skill">CSS3</span>
+                <span class="skill">JavaScript</span>
+                <span class="skill">React</span>
+                <span class="skill">Node.js</span>
+                <span class="skill">Git</span>
+                <span class="skill">UI/UX Design</span>
+            </div>
+        </section>
+        <section id="contact">
+            <h2>Contact Me</h2>
+            <form class="contact-form" id="contactForm">
+                <input type="text" id="name" placeholder="Your Name" required>
+                <input type="email" id="email" placeholder="Your Email" required>
+                <textarea id="message" rows="4" placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+                <div class="success-message" id="successMessage" style="display:none;">
+                    Thank you! Your message has been sent.
+                    <footer style="margin-top:2rem; text-align:center; color:#6b7280; font-size:1rem;">
+                        &copy; 2024 George Kibage. All rights reserved.
+                    </footer>
+                </div>
+            </form>
+        </section>
+    </div>
+    <script>
+        // Smooth scroll for navigation
+        document.querySelectorAll('nav a').forEach(link => {
+            link.addEventListener('click', function(e) {
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    e.preventDefault();
+                    window.scrollTo({
+                        top: target.offsetTop - 20,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+
+        // Contact form handler
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            document.getElementById('successMessage').style.display = 'block';
+            this.reset();
+            setTimeout(() => {
+                document.getElementById('successMessage').style.display = 'none';
+            }, 3000);
+        });
+    </script>
+</body>
+</html></form></div></section>

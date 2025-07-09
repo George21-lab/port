@@ -150,9 +150,25 @@
             .container { padding: 0 0.5rem; }
             section { padding: 1rem; }
         }
+        .bgVideo {
+            position: fixed;
+            filter:brightness(0.7);
+            opacity: 0.5;
+            top: 0;
+            left: 0;
+            min-width: 50vw;
+            min-height: 50vh;
+            width: auto;
+            height: auto;
+            z-index: -1;
+            object-fit: cover;
+        }
     </style>
 </head>
 <body>
+    <video autoplay muted loop playsinline id="bgVideo" style="position:fixed; top:0; left:0; min-width:50vw; min-height:50vh; width:auto; height:auto; z-index:-1; object-fit:cover;">
+        <source src="background1.mp4" type="video/mp4">
+    </video>
     <header>
         <h1>GEORGE KIBAGE</h1>
         <p>Web Developer & Designer</p>
